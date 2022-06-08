@@ -58,7 +58,7 @@
 
   <tr :style="{color : setearColor(this.calcularPromedio())}">
       <th scope="row">Promedio</th>
-      <td>{{this.calcularPromedio()}}</td>
+      <td>{{this.calcularPromedio().toFixed(2)}}</td>
     </tr>
       
   </tbody>
@@ -120,7 +120,7 @@
         if (nota < 4) {
           color = '#f0072e'
         } else if ( nota < 7) {
-          color = 'yellow'
+          color = '#FFFF00'
         } else {
           color = '#0ff54c'
         }
